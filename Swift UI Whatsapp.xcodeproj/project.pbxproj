@@ -66,6 +66,7 @@
 		4E9E4785259FD1EF00A55280 /* Swift UI Whatsapp */ = {
 			isa = PBXGroup;
 			children = (
+				4EF2D1A625A0425D004F4380 /* Models */,
 				4E9E479B259FD32B00A55280 /* Tabs */,
 				4E9E4786259FD1EF00A55280 /* AppDelegate.swift */,
 				4E9E4788259FD1EF00A55280 /* SceneDelegate.swift */,
@@ -96,6 +97,13 @@
 				4E9E47A8259FD3F600A55280 /* SettingsView.swift */,
 			);
 			path = Tabs;
+			sourceTree = "<group>";
+		};
+		4EF2D1A625A0425D004F4380 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

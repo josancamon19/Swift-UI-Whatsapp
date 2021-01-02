@@ -13,6 +13,11 @@
 		4E9E478D259FD1F000A55280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E478C259FD1F000A55280 /* Assets.xcassets */; };
 		4E9E4790259FD1F000A55280 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E478F259FD1F000A55280 /* Preview Assets.xcassets */; };
 		4E9E4793259FD1F000A55280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E4791259FD1F000A55280 /* LaunchScreen.storyboard */; };
+		4E9E479D259FD33D00A55280 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E479C259FD33D00A55280 /* ChatsView.swift */; };
+		4E9E47A0259FD3C900A55280 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E479F259FD3C900A55280 /* StatusView.swift */; };
+		4E9E47A3259FD3D900A55280 /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E47A2259FD3D900A55280 /* CallsView.swift */; };
+		4E9E47A6259FD3EE00A55280 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E47A5259FD3EE00A55280 /* CameraView.swift */; };
+		4E9E47A9259FD3F600A55280 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E47A8259FD3F600A55280 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		4E9E478F259FD1F000A55280 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E9E4792259FD1F000A55280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E9E4794259FD1F000A55280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E9E479C259FD33D00A55280 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		4E9E479F259FD3C900A55280 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		4E9E47A2259FD3D900A55280 /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
+		4E9E47A5259FD3EE00A55280 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		4E9E47A8259FD3F600A55280 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		4E9E4785259FD1EF00A55280 /* Swift UI Whatsapp */ = {
 			isa = PBXGroup;
 			children = (
+				4E9E479B259FD32B00A55280 /* Tabs */,
 				4E9E4786259FD1EF00A55280 /* AppDelegate.swift */,
 				4E9E4788259FD1EF00A55280 /* SceneDelegate.swift */,
 				4E9E478A259FD1EF00A55280 /* ContentView.swift */,
@@ -73,6 +84,18 @@
 				4E9E478F259FD1F000A55280 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E9E479B259FD32B00A55280 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				4E9E479C259FD33D00A55280 /* ChatsView.swift */,
+				4E9E479F259FD3C900A55280 /* StatusView.swift */,
+				4E9E47A2259FD3D900A55280 /* CallsView.swift */,
+				4E9E47A5259FD3EE00A55280 /* CameraView.swift */,
+				4E9E47A8259FD3F600A55280 /* SettingsView.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9E479D259FD33D00A55280 /* ChatsView.swift in Sources */,
+				4E9E47A9259FD3F600A55280 /* SettingsView.swift in Sources */,
+				4E9E47A6259FD3EE00A55280 /* CameraView.swift in Sources */,
 				4E9E4787259FD1EF00A55280 /* AppDelegate.swift in Sources */,
 				4E9E4789259FD1EF00A55280 /* SceneDelegate.swift in Sources */,
 				4E9E478B259FD1EF00A55280 /* ContentView.swift in Sources */,
+				4E9E47A3259FD3D900A55280 /* CallsView.swift in Sources */,
+				4E9E47A0259FD3C900A55280 /* StatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

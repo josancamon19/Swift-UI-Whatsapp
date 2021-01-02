@@ -18,7 +18,6 @@ struct ChatsView: View {
                     .padding(.trailing, 4)
                 
                 VStack(alignment: .leading) {
-                    
                     HStack {
                         Text("Joan Cabezas").font(.subheadline)
                         Spacer()
@@ -37,6 +36,11 @@ struct ChatsView: View {
             .listStyle(SidebarListStyle())
             .padding(-14)
             .navigationBarTitle("Chats")
+            .navigationBarItems( // TODO add centered Toggle
+                leading: Button("Edit"){},
+                trailing: Image(systemName: "iphone")
+                    .foregroundColor(.blue)
+            )
         }.tabItem {
             Image(systemName: "message.fill")
             Text("Chats")

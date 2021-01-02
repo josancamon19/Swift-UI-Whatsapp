@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E84759A25A0E3FB0078E37A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E84759925A0E3FB0078E37A /* Coordinator.swift */; };
 		4E9E4787259FD1EF00A55280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E4786259FD1EF00A55280 /* AppDelegate.swift */; };
 		4E9E4789259FD1EF00A55280 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E4788259FD1EF00A55280 /* SceneDelegate.swift */; };
 		4E9E478B259FD1EF00A55280 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E478A259FD1EF00A55280 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E84759925A0E3FB0078E37A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4E9E4783259FD1EF00A55280 /* Swift UI Whatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift UI Whatsapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9E4786259FD1EF00A55280 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E9E4788259FD1EF00A55280 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E84759825A0E3F20078E37A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4E84759925A0E3FB0078E37A /* Coordinator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		4E9E477A259FD1EF00A55280 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		4E9E4785259FD1EF00A55280 /* Swift UI Whatsapp */ = {
 			isa = PBXGroup;
 			children = (
+				4E84759825A0E3F20078E37A /* Utilities */,
 				4EF2D1A625A0425D004F4380 /* Models */,
 				4E9E479B259FD32B00A55280 /* Tabs */,
 				4E9E4786259FD1EF00A55280 /* AppDelegate.swift */,
@@ -184,6 +195,7 @@
 				4E9E478B259FD1EF00A55280 /* ContentView.swift in Sources */,
 				4E9E47A3259FD3D900A55280 /* CallsView.swift in Sources */,
 				4E9E47A0259FD3C900A55280 /* StatusView.swift in Sources */,
+				4E84759A25A0E3FB0078E37A /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Swift UI Whatsapp/Preview Content\"";
+				DEVELOPMENT_TEAM = VFVC83G53L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Swift UI Whatsapp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,6 +357,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Swift UI Whatsapp/Preview Content\"";
+				DEVELOPMENT_TEAM = VFVC83G53L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Swift UI Whatsapp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

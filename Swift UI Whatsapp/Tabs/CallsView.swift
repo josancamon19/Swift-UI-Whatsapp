@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CallsView: View {
+    @State private var showAllCalls = true
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -48,7 +50,14 @@ struct CallsView: View {
                 .listStyle(SidebarListStyle())
                 .padding(-14)
                 
-            }.navigationBarTitle("Status")
+            }
+            .navigationBarTitle("Calls")
+            .navigationBarItems(
+                leading: HStack {
+                    Button("Edit") {}
+                },
+                trailing: Image(systemName: "iphone").foregroundColor(.blue)
+            )
         }.tabItem {
             Image(systemName: "iphone")
             Text("Calls")

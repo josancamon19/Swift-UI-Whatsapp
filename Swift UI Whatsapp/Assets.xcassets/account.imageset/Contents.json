@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "CleanShot 2021-01-02 at 13.01.43.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -8,33 +8,63 @@
 import SwiftUI
 
 struct ChatsView: View {
+    @State private var searchText : String = ""
+    
     var body: some View {
         NavigationView {
+            
             List(0..<15) { item in
-                
-                Image("person")
-                    .resizable()
-                    .frame(width: 24.0, height: 24.0)
-                    .padding(.trailing, 4)
-                
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("Joan Cabezas").font(.subheadline)
-                        Spacer()
-                        Text("3:51 p.m")
-                            .font(.caption2)
-                            .foregroundColor(Color.blue)
-                            .padding(.trailing, 12)
+                if (item == 0) {
+                    VStack {
+                        SearchBar(text: $searchText, placeholder: "Search")
+                        HStack {
+                            Button("Difusion List"){
+                                
+                            }.font(.caption)
+                            .foregroundColor(.blue)
+                            .padding(.leading, 16)
+                            
+                            Spacer()
+                            
+                            Button("Create a group"){
+                                
+                            }.font(.caption)
+                            .foregroundColor(.blue)
+                            .padding(.trailing, 16)
+                        }
                     }
-                    
-                    Text("Publishing Whatsapp clone to the App Store, go and check it out!")
-                        .font(.caption)
-                        .foregroundColor(Color.gray)
-                        .padding(.trailing, 20)
+                } else {
+                    HStack {
+                        Image("person")
+                            .resizable()
+                            .frame(width: 24.0, height: 24.0)
+                            .padding(.trailing, 4)
+                        
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Text("Joan Cabezas").font(.subheadline)
+                                Spacer()
+                                Text("3:51 p.m")
+                                    .font(.caption2)
+                                    .foregroundColor(Color.blue)
+                                    .padding(.trailing, 12)
+                            }
+                            
+                            Text("Publishing Whatsapp clone to the App Store, go and check it out!")
+                                .font(.caption)
+                                .foregroundColor(Color.gray)
+                                .padding(.trailing, 20)
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 4)
                 }
+                
             }
-            .listStyle(SidebarListStyle())
+            .listStyle(PlainListStyle())
             .padding(-14)
+            
+            
             .navigationBarTitle("Chats")
             .navigationBarItems( // TODO add centered Toggle
                 leading: Button("Edit"){},

@@ -19,6 +19,7 @@
 		4E9E47A3259FD3D900A55280 /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E47A2259FD3D900A55280 /* CallsView.swift */; };
 		4E9E47A6259FD3EE00A55280 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E47A5259FD3EE00A55280 /* CameraView.swift */; };
 		4E9E47A9259FD3F600A55280 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E47A8259FD3F600A55280 /* SettingsView.swift */; };
+		4ED24EB325A1828600321BDB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED24EB225A1828600321BDB /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4E9E47A2259FD3D900A55280 /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
 		4E9E47A5259FD3EE00A55280 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		4E9E47A8259FD3F600A55280 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4ED24EB225A1828600321BDB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				4E84759925A0E3FB0078E37A /* Coordinator.swift */,
+				4ED24EB225A1828600321BDB /* SearchBar.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				4E9E4789259FD1EF00A55280 /* SceneDelegate.swift in Sources */,
 				4E9E478B259FD1EF00A55280 /* ContentView.swift in Sources */,
 				4E9E47A3259FD3D900A55280 /* CallsView.swift in Sources */,
+				4ED24EB325A1828600321BDB /* SearchBar.swift in Sources */,
 				4E9E47A0259FD3C900A55280 /* StatusView.swift in Sources */,
 				4E84759A25A0E3FB0078E37A /* Coordinator.swift in Sources */,
 			);

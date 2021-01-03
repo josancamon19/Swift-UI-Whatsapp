@@ -22,7 +22,7 @@ extension CaptureImageView: UIViewControllerRepresentable {
     let picker = UIImagePickerController()
     picker.delegate = context.coordinator
     /// Default is images gallery. Un-comment the next line of code if you would like to test camera
-//    picker.sourceType = .camera
+    // picker.sourceType = .camera
     return picker
   }
   

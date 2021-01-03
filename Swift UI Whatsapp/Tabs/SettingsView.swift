@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let sectionColor = Color(red: 245 / 255, green: 245 / 255, blue: 245 / 255)
+
 class SettingsItemData {
     var image : String = ""
     var title : String = ""
@@ -30,10 +32,13 @@ struct SettingsItem: View {
                     .font(.subheadline)
                     .foregroundColor(.gray)
                 Spacer()
-                Image(systemName: "chevron-right")
+                Image("chevron")
+                    .resizable()
+                    .frame(width:16, height:14)
             }.padding(.horizontal, 12)
         }
         .frame(height:20)
+        
     }
 }
 
@@ -57,28 +62,42 @@ struct SettingsView: View {
             ScrollView {
                 // TODO profile section
                 VStack{}.padding(.top, 16)
-                Section{
-                    SettingsItem(item: firstSectionItems[0])
-                    Divider().padding(.leading, 48).padding(0)
-                    SettingsItem(item: firstSectionItems[1])
+                ZStack {
+                    VStack{
+                        SettingsItem(item: firstSectionItems[0])
+                        Divider().padding(.leading, 48).padding(0)
+                        SettingsItem(item: firstSectionItems[1])
+                    }
+                    .padding(.vertical, 16)
+                    .background(sectionColor)
                 }
-                VStack{}.padding(.top, 24)
-                Section {
-                    SettingsItem(item: secondSectionItems[0])
-                    Divider().padding(.leading, 48)
-                    SettingsItem(item: secondSectionItems[1])
-                    Divider().padding(.leading, 48)
-                    SettingsItem(item: secondSectionItems[2])
-                    Divider().padding(.leading, 48)
-                    SettingsItem(item: secondSectionItems[3])
+                VStack{}.padding(.top, 12)
+                ZStack {
+                    VStack {
+                        SettingsItem(item: secondSectionItems[0])
+                        Divider().padding(.leading, 48)
+                        SettingsItem(item: secondSectionItems[1])
+                        Divider().padding(.leading, 48)
+                        SettingsItem(item: secondSectionItems[2])
+                        Divider().padding(.leading, 48)
+                        SettingsItem(item: secondSectionItems[3])
+                    }
+                    .padding(.vertical, 16)
+                    .background(sectionColor)
                 }
-                VStack{}.padding(.top, 24)
-                Section {
-                    SettingsItem(item: thirdSectionItems[0])
-                    Divider().padding(.leading, 48)
-                    SettingsItem(item: thirdSectionItems[1])
+                
+                VStack{}.padding(.top, 12)
+                
+                ZStack {
+                    VStack {
+                        SettingsItem(item: thirdSectionItems[0])
+                        Divider().padding(.leading, 48)
+                        SettingsItem(item: thirdSectionItems[1])
+                    }
+                    .padding(.vertical, 16)
+                    .background(sectionColor)
                 }
-                VStack{}.padding(.top, 24)
+                VStack{}.padding(.top, 12)
                 HStack(alignment:.center ){
                     Spacer()
                     VStack{

@@ -41,6 +41,7 @@ struct CameraView: View {
             /// All the related code to the camera stuff, was taken from https://www.iosapptemplates.com/blog/swiftui/photo-camera-swiftui @mrcflorian
             CaptureImageView(isShown: $showCaptureImageView, image: $image)
         }.tabItem {
+            Spacer()
             Image(systemName: "ipodshuffle.gen4")
             Text("Camera")
             

@@ -38,8 +38,8 @@ struct PersonView: View {
                     .font(.caption2)
                     .foregroundColor(.gray)
             }
+            Spacer()
             if (isSelf){
-                Spacer()
                 HStack(alignment:.center) {
                     Image(systemName: "camera")
                         .foregroundColor(.blue)
@@ -50,31 +50,47 @@ struct PersonView: View {
                 }
             }
         }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 4)
         
     }
 }
 
 struct StatusView: View {
-    
+    @State private var searchText : String = ""
+
     var body: some View {
         NavigationView {
-            List(0..<10) { item in
-                if (item == 0){
-                    PersonView(isSelf: true).padding(.bottom, 32)
-                }else {
-                    PersonView()
+            VStack {
+                List {
+                    VStack {
+                        SearchBar(text: $searchText, placeholder: "Search")
+                        PersonView(isSelf: true).background(sectionColor).padding(.horizontal, 4)
+                    }.background(sectionColor).padding(-16)
+
+                    Section(header: HStack {
+                        Text("Watched").foregroundColor(.gray).font(.caption)
+                        Spacer()
+                    }) {
+                        ForEach(0..<12) { item in
+                            PersonView().background(sectionColor)
+                                .padding(.horizontal, -16)
+                                .padding(.vertical, -4)
+                        }
+                        .listRowBackground(sectionColor)
+                        .background(sectionColor)
+                        .listStyle(PlainListStyle())
+                    }
                 }
-                
             }
-            .listStyle(SidebarListStyle())
-            .padding(-14)
+            .padding(.horizontal, -16)
             .navigationBarTitle("Status")
             .navigationBarItems(leading:Button("Privacy") {})
-        }
-        .tabItem {
+        } .tabItem {
             Image(systemName: "livephoto")
             Text("Status")
         }
+        
         
     }
 }

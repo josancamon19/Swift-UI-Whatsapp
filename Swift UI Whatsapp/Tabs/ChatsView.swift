@@ -12,28 +12,26 @@ struct ChatsView: View {
     
     var body: some View {
         NavigationView {
-            
-            List(0..<15) { item in
-                if (item == 0) {
-                    VStack {
-                        SearchBar(text: $searchText, placeholder: "Search")
-                        HStack {
-                            Button("Difusion List"){
-                                
-                            }.font(.caption)
-                            .foregroundColor(.blue)
-                            .padding(.leading, 16)
+            List {
+                VStack {
+                    SearchBar(text: $searchText, placeholder: "Search")
+                    HStack {
+                        Button("Difusion List"){
                             
-                            Spacer()
+                        }.font(.caption)
+                        .foregroundColor(.blue)
+                        .padding(.leading, 16)
+                        
+                        Spacer()
+                        
+                        Button("Create a group"){
                             
-                            Button("Create a group"){
-                                
-                            }.font(.caption)
-                            .foregroundColor(.blue)
-                            .padding(.trailing, 16)
-                        }
+                        }.font(.caption)
+                        .foregroundColor(.blue)
+                        .padding(.trailing, 16)
                     }
-                } else {
+                }
+                ForEach(0..<10, id: \.self){ item in
                     HStack {
                         Image("person")
                             .resizable()
@@ -56,17 +54,13 @@ struct ChatsView: View {
                                 .padding(.trailing, 20)
                         }
                     }
-                    .padding(.horizontal, 16)
+                    .padding(.leading, 16)
                     .padding(.vertical, 4)
                 }
-                
-            }
-            .listStyle(PlainListStyle())
+            }.listStyle(PlainListStyle())
             .padding(-14)
-            
-            
             .navigationBarTitle("Chats")
-            .navigationBarItems( // TODO add centered Toggle
+            .navigationBarItems(
                 leading: Button("Edit"){},
                 trailing: Image(systemName: "iphone")
                     .foregroundColor(.blue)
